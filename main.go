@@ -30,7 +30,7 @@ func run() {
 	cmd.Stdout = os.Stdout
 	cmd.Stderr = os.Stderr
 	cmd.SysProcAttr = &syscall.SysProcAttr{
-		CloneFlags: syscall.CLONE_NEWUTS
+		CloneFlags: syscall.CLONE_NEWUTS,
 	}
 	cmd.Run()
 }
